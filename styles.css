@@ -1,258 +1,245 @@
 #canvas-image-blending {
-  position: absolute;
-  width: 100%;
-  height: 750px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .main-content {
-  padding: 5% 5%;
+    padding: 5% 5%;
+    position: relative;
+    z-index: 1;
 }
 
 .header {
-  display: flex;
+    display: flex;
 }
 
 .work-header {
-  display: flex;
+    display: flex;
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 3.0rem;
-  font-weight: 700;
-  color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.0rem;
+    font-weight: 700;
+    color: black;
 }
 
 h2 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 2.0rem;
-  font-weight: 500;
-  color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 500;
+    color: black;
 }
 
 h3 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 500;
-  color: black;
-  padding-bottom: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 10px;
 }
 
 p {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
 }
 
 .time-text {
-  font-family: 'Rubik', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 200;
-  color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: black;
 }
 
 .header-text {
-  width: 80%
+    width: 80%
 }
 
 .header-image {
-  width: 65%;
-  height: 65%;
+    width: 65%;
+    height: 65%;
 }
 
 .col {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .rounded-corners {
-  border-radius: 20px;
-  height: 300px;
+    border-radius: 20px;
+    height: 300px;
 }
 
-/* MODIFIED: Making image smaller and ensuring left alignment */
 .title-image {
-  border-radius: 20px;
-  width: 50%; /* Reduced image width (adjust as needed) */
-  display: block; /* Ensure the image is a block element for margin control */
-  margin-left: 0; /* Explicitly set left margin */
-  margin-right: auto; /* Auto right margin helps with left alignment in some contexts */
-  margin-bottom: 5px; /* Adjusted bottom margin to reduce the gap */
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-  border-radius: 3%;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 3%;
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.closeModal1, .closeModal2, .closeModal3, .closeModal4, .closeModal5 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.closeModal1:hover, .closeModal1:focus,
+.closeModal2:hover, .closeModal2:focus,
+.closeModal3:hover, .closeModal3:focus,
+.closeModal4:hover, .closeModal4:focus,
+.closeModal5:hover, .closeModal5:focus {
+    color: black;
+    text-decoration: none;
 }
 
 ul {
-  list-style-position: inside;
-  list-style-type: square;
+    list-style-position: inside;
+    list-style-type: square;
 }
 
-/* Ensure flex-container uses flexbox */
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  /* Removed font-size and text-align as they are general styles */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-container-reverse {
-  display: flex;
-  flex-wrap: wrap;
-  /* Removed font-size and text-align */
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* MODIFIED: Ensuring big-container-left is left-aligned (now contains text) */
 .big-container-left {
-  flex: 70%;
-  padding: 10px;
-  text-align: left; /* Ensure text is left aligned */
+    flex: 1 1 250px;
+    padding: 10px;
+    text-align: left;
+    margin-right: 40px;
+    min-width: 200px;
+    margin-top: 20px;
 }
 
-/* MODIFIED: Ensuring small-container-right is left-aligned (now contains image and info) */
 .small-container-right {
-  flex: 30%;
-  padding: 10px;
-  text-align: left; /* Left align content within small-container-right */
+    flex: 0 1 20%;
+    max-width: 20%;
+    min-width: 100px;
+    padding: 10px;
+    text-align: center;
 }
 
 .big-container-right {
-  flex: 70%;
-  padding: 10px;
-  text-align: left;
+    flex: 70%;
+    padding: 10px;
+    text-align: left;
 }
 
 .small-container-left {
-  flex: 30%;
-  padding: 10px;
-  text-align: left;
+    flex: 30%;
+    padding: 10px;
+    text-align: left;
 }
 
-/* Contact me section */
-
 .fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 60px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .fa-paper-plane {
-  background: #3D348B;
-  color: white;
+    background: #3D348B;
+    color: white;
 }
 
 .fa-instagram {
-  background: #7678ED;
-  color: white;
+    background: #7678ED;
+    color: white;
 }
 
 .fa-github {
-  background: #0973fd;
-  color: white;
+    background: #0973fd;
+    color: white;
 }
 
-/* Styling for the progress bars */
-
 .progressbar {
-  height: 30px;
-  width: 20%;
-  background-color: #3D348B;
-  display: flex;
-  align-items: center;
-  margin: 20px;
+    height: 30px;
+    width: 20%;
+    background-color: #3D348B;
+    display: flex;
+    align-items: center;
+    margin: 20px;
 }
 
 .inner-progressbar {
-  background-color: #7678ED;
-  height: 22px;
-  margin-left: 4px;
-  margin-right: 4px;
-  padding-right: 4px;
-  color: white;
-  text-align: right;
-  font-size: 15px;
+    background-color: #7678ED;
+    height: 22px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-right: 4px;
+    color: white;
+    text-align: right;
+    font-size: 15px;
 }
 
 .italian {
-  width: 100%;
+    width: 100%;
 }
 
 .english {
-  width: 100%;
+    width: 100%;
 }
 
 .german {
-  width: 85%;
+    width: 85%;
 }
 
 .mandarin {
-  width: 20%
+    width: 20%
 }
 
-/* NEW OR MODIFIED RULES for the info below the image */
-
 .below-image-info {
-   margin-top: 5px; /* Adjusted top margin for a smaller gap above the text block */
-   text-align: left; /* Left align the text within this block */
+    margin-top: 5px;
+    text-align: left;
 }
 
 .below-image-info p {
-    margin-top: 10px; /* Add space above the paragraph below the horizontal links */
-    margin-bottom: 5px; /* Space below the paragraph */
-}
-
-.info-item {
-    margin-top: 3px;
-    margin-bottom: 3px; /* Add some space below each info item */
-    text-align: left;
-    display: flex;
-    align-items: center;
-    /* Removed justify-content: flex-start; here, will be controlled by parent flex container */
-    font-size: 1.2rem;
-    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .info-item i {
@@ -260,94 +247,134 @@ ul {
     font-size: 1.2rem;
 }
 
-/* Style for the links within info-item to match text appearance */
-.info-item a {
-    font-size: 1.2rem;
+/* Updated Styling for horizontal links */
+.horizontal-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px; /* Increased gap between button-like items */
+}
+
+/* Style for the 'a' tag which is the actual button-like element */
+.horizontal-links .info-item a {
+    border-radius: 8px;
+    padding: 10px 20px; /* Increased horizontal padding for more space */
+    border: 1px solid #ccc;
+    background-color: #fefefe;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: black;
     text-decoration: none;
+    display: inline-flex; /* Use inline-flex so they sit next to each other */
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    white-space: nowrap; /* Prevent text from wrapping inside the button */
+    flex-shrink: 0; /* Prevent the buttons from shrinking too much */
 }
 
-.info-item a:hover {
-    text-decoration: underline;
+.horizontal-links .info-item a:hover {
+    background-color: #e9e9e9;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 1.0);
+    text-decoration: none;
 }
 
-/* NEW RULE: Styling for the horizontal links container */
-.horizontal-links {
-    display: flex; /* Arrange children (info-items) horizontally */
-    justify-content: center; /* Center the links horizontally as a group */
-    align-items: center; /* Vertically align items in the horizontal bar */
-    margin-top: 10px; /* Add space above the horizontal bar (below the paragraph) */
-    margin-bottom: 10px; /* Add space below the horizontal bar (above the University/Email items) */
-    flex-wrap: wrap; /* Allow links to wrap to the next line on smaller screens */
-}
-
-/* Adjust margin for info items within the horizontal bar for spacing */
+/* The .info-item wrapper itself should not have button styling */
 .horizontal-links .info-item {
-    margin: 0 10px; /* Add horizontal space between the links */
-    /* Remove vertical margin from the general info-item rule for these */
+    border-radius: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    cursor: auto;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    display: block; /* Allows the 'a' tag to fill it if needed, but 'a' is inline-flex */
+    margin: 0; /* Reset wrapper margins */
 }
 
 
+/* Media queries */
 @media only screen and (max-width: 550px) and (min-width: 200px){
-  .container-fluid {
-    align-content: center;
-  }
+    .container-fluid {
+        align-content: center;
+    }
 
-  .header {
-    display: inline;
-    align-items: center;
-  }
+    .header {
+        display: inline;
+        align-items: center;
+    }
 
-  .progressbar {
-    width: 60%;
-  }
+    .progressbar {
+        width: 60%;
+    }
 
-  /* MODIFIED in media query: Changed to column and left align */
-  .flex-container, .flex-container-reverse {
-    flex-direction: column; /* Stack items vertically */
-    text-align: left; /* Left align the stacked items */
-  }
+    .flex-container, .flex-container-reverse {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .big-container-left, .small-container-right {
-    flex: 100%; /* Take full width when stacked */
-    text-align: left; /* Ensure left alignment */
-  }
-
-  .small-container-right {
-    text-align: left; /* Ensure left alignment */
-  }
-
-  .big-container-right, .small-container-left {
-    flex: 100%; /* Take full width when stacked */
-  }
-
-  .small-container-left {
-    text-align: left; /* Left align in small screens */
-  }
-
-    /* Adjust image alignment in small screens */
-    .small-container-right .title-image {
+    .big-container-left, .small-container-right {
+        flex: 100%;
+        max-width: 100%;
+        text-align: left;
+        margin-right: 0;
         margin-left: 0;
-        margin-right: auto; /* Ensure left alignment */
     }
 
-     .below-image-info {
-        text-align: left; /* Ensure text below image is left aligned */
+    .small-container-right {
+        text-align: center;
     }
 
-     .info-item {
-        justify-content: flex-start; /* Ensure info items are left aligned */
-     }
+    .big-container-right, .small-container-left {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .small-container-left {
+        text-align: left;
+    }
+
+    .small-container-right .title-image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .below-image-info {
+        text-align: left;
+    }
+
+    .info-item {
+        justify-content: flex-start;
+    }
 
     /* Adjust horizontal links for smaller screens */
     .horizontal-links {
         flex-direction: column; /* Stack horizontal links vertically on small screens */
-        align-items: flex-start; /* Align items to the left when stacked */
+        align-items: stretch; /* Make items fill the width of the container */
         justify-content: flex-start; /* Ensure left alignment when stacked */
+        gap: 10px; /* Adjust gap for stacked items */
     }
 
     .horizontal-links .info-item {
-        margin: 3px 0; /* Add vertical space between stacked links */
+        margin: 0; /* Reset margins from the non-media query rule */
+        width: 100%; /* Make each button-like item take full width */
+        max-width: 300px; /* Limit button width on small screens */
+        margin-left: auto; /* Center buttons horizontally */
+        margin-right: auto;
+    }
+
+    .horizontal-links .info-item a {
+        display: flex; /* Ensure icon and text are aligned when stacked */
+        justify-content: center; /* Center content in the button */
+        width: 100%; /* Make the actual link fill its container */
     }
 }
