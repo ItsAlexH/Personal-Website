@@ -7,7 +7,7 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(1000)
-  .typeString('I am a masters student at Princeton.') //Add your own tagline
+  .typeString('I am a student researcher in Condensed Matter Theory.') //Add your own tagline
   .pauseFor(3000)
   .start()
 
