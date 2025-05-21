@@ -1,7 +1,7 @@
 #canvas-image-blending {
     position: absolute;
     width: 100%;
-    height: 750px;
+    height: 750px; /* Consider adjusting this height based on content or making it responsive if it overlaps */
     top: 0;
     right: 0;
     bottom: 0;
@@ -300,6 +300,35 @@ ul {
     margin: 0; /* Reset wrapper margins */
 }
 
+/* --- Start Navbar Specific Styles (modified for consistent active link boldness) --- */
+/* General styling for nav links (inactive state) */
+.navbar-nav .nav-link {
+    color: gray; /* Sets inactive links to gray */
+}
+
+/* Styling for the active nav link */
+.navbar-nav .nav-link.active {
+    color: black !important; /* Makes the active link black, !important is used to override Bootstrap's default */
+    font-weight: 600; /* Adjusted to 600 for a more subtle bold, matching the 'Projects' image */
+    text-shadow: none; /* Explicitly remove text-shadow */
+}
+
+/* Optional: Adjust hover state if needed */
+.navbar-nav .nav-link:hover {
+    color: #333; /* Slightly darker gray on hover for inactive links */
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: black !important; /* Keeps active link black on hover */
+    text-shadow: none; /* Ensure no shadow on hover for active link */
+}
+
+/* Ensures the brand name is black */
+.navbar-brand {
+    color: black !important;
+}
+/* --- End Navbar Specific Styles --- */
+
 
 /* Media queries */
 @media only screen and (max-width: 550px) and (min-width: 200px){
@@ -376,5 +405,8 @@ ul {
         display: flex; /* Ensure icon and text are aligned when stacked */
         justify-content: center; /* Center content in the button */
         width: 100%; /* Make the actual link fill its container */
+        font-size: 0.9rem; /* Reduce font size for smaller screens */
+        padding: 8px 15px; /* Reduce padding for smaller screens */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Reduce box shadow for smaller screens */
     }
 }
