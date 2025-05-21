@@ -308,9 +308,9 @@ ul {
 
 /* Styling for the active nav link */
 .navbar-nav .nav-link.active {
-    color: #000000 !important; /* Makes the active link black, !important is used to override Bootstrap's default */
-    font-weight: 600 !important; /* Adjusted to 600 for a more subtle bold, matching the 'Projects' image */
-    text-shadow: none !important; /* Explicitly remove text-shadow */
+    color: black !important; /* Makes the active link black, !important is used to override Bootstrap's default */
+    font-weight: 600; /* Adjusted to 600 for a more subtle bold, matching the 'Projects' image */
+    text-shadow: none; /* Explicitly remove text-shadow */
 }
 
 /* Optional: Adjust hover state if needed */
@@ -319,8 +319,8 @@ ul {
 }
 
 .navbar-nav .nav-link.active:hover {
-    color: #000000 !important; /* Keeps active link black on hover */
-    text-shadow: none !important; /* Ensure no shadow on hover for active link */
+    color: black !important; /* Keeps active link black on hover */
+    text-shadow: none; /* Ensure no shadow on hover for active link */
 }
 
 /* Ensures the brand name is black */
